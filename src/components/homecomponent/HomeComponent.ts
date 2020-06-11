@@ -58,7 +58,7 @@ export default class HomeComponent extends Vue {
 
             let maxTempDataObj: any = {
                 label: APP_CONST.MAX_TEMP,
-                data: maxData.sort(),
+                data: maxData,
                 fill: APP_CONST.FALSE,
                 borderColor: APP_CONST.BORDER_BLUE,
                 backgroundColor: APP_CONST.BACKGROUND_BLUE,
@@ -66,7 +66,7 @@ export default class HomeComponent extends Vue {
             }
             let minTempDataObj: any = {
                 label: APP_CONST.MIN_TEMP,
-                data: minData.sort(),
+                data: minData,
                 fill: APP_CONST.FALSE,
                 borderColor: APP_CONST.BORDER_GREEN,
                 backgroundColor: APP_CONST.BORDER_GREEN,
