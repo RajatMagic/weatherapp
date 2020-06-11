@@ -1,10 +1,10 @@
-import {Vue} from 'vue-property-decorator'
+import { Vue } from 'vue-property-decorator'
 import * as screentext from '@/lang/en/screentext.json'
 
-export class ScreenText extends Vue{
+export class ScreenText extends Vue {
 
-    public getScreenText(key:string):string{
-        let strScreenText:string = (<any> screentext.en)[key];
+    public getScreenText(key: string): string {
+        let strScreenText: string = (<any>screentext.en)[key];
         return strScreenText;
     }
 

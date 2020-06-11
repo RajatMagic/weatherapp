@@ -9,7 +9,7 @@
   <div
     id="app"
   >
-    <h4 v-if="currentPath=='/'" @click="goToHome">Go To Track Weather --></h4>
+    <h4 v-if="currentPath=='/'" @click="goToHome"><a href="javascript:void(0)">Go To Track Weather --></a></h4>
     <router-view/>
   </div>
 </template>

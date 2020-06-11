@@ -1,4 +1,5 @@
 
+
 function lazyLoad(view: any) {
 	return () => import(`@/${view}.vue`)
 }

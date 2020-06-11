@@ -1,7 +1,14 @@
 {
     "en": {
-
-        "BTN_GET_STARTED": "LET’S GO!"
-        
+        "LOCATION": "Location:",
+        "CURRENT_WEATHER": "Current weather description:",
+        "CURRENT_TEMP": "Current temperature:",
+        "MAX": "[Max]",
+        "MIN": "[Min]",
+        "VIEW_DETAILS": "View More Weather Details ...",
+        "WIND_SPEED": "Wind Speed:",
+        "HUMIDITY": "Humidity",
+        "PRESSURE": "Pressure:",
+        "SUNRISE": "Sunrise/Sunset Time:"
     }
 }

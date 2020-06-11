@@ -1,39 +1,31 @@
 
 <script>
 import { Line } from "vue-chartjs";
-//eslint-disable-next-line
-import chartjsPluginAnnotation from "chartjs-plugin-annotation";
-
-var chartColors = {
-  color1: "#09729f",
-  color2: "#fff"
-};
+import APP_CONST from '@/constants/AppConst';
 
 export default {
   extends: Line,
-  name: "LineChart",
+  name: APP_CONST.LINE_CHART,
   props: ["data"],
-  mounted() { },
+  mounted() {},
   watch: {
     data: {
-      immediate: true,
-      deep: true,
+      immediate: APP_CONST.TRUE,
+      deep: APP_CONST.TRUE,
       handler(newValue, oldValue) {
-          if(newValue&&newValue.labels&&newValue.datasets){
-                let labels = newValue.labels;
-                //options.scales.xAxes[0].gridLines.color = gridLineColor;
-                this.renderChart(
-                {
-                    labels,
-                    datasets: [newValue.datasets[0], newValue.datasets[1]]
-                },
-                {
-                    responsive: true, // Instruct chart js to respond nicely.
-                    maintainAspectRatio: false // Add to prevent default behaviour of full-width/height
-                }
-                );
-          }
-        
+        if (newValue && newValue.labels && newValue.datasets) {
+          let labels = newValue.labels;
+          this.renderChart(
+            {
+              labels,
+              datasets: [newValue.datasets[0], newValue.datasets[1]]
+            },
+            {
+              responsive: APP_CONST.TRUE,
+              maintainAspectRatio: APP_CONST.FALSE
+            }
+          );
+        }
       }
     }
   }
