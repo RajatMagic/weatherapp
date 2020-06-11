@@ -1,0 +1,8 @@
+VUE_APP_MINI_UI_NAME=admin
+VUE_APP_BASE_IDENTITY_REDIRECT_URL=https://bxuiidentityqa.z13.web.core.windows.net/#/
+VUE_APP_BASE_ADMIN_REDIRECT_URL=https://bxuiadminqa.z13.web.core.windows.net/#/
+VUE_APP_BASE_URL=https://bxapiadminqa.azurewebsites.net/api/v1/
+VUE_APP_BASE_IDENTITY_URL=https://bxapiidentityqa.azurewebsites.net/api/v1/
+VUE_APP_BASE_CMS_URL=https://bxapicmsqa.azurewebsites.net/api/v1/CMS/
+VUE_APP_BASE_LMS_URL=https://bxapicmsqa.azurewebsites.net/api/v1/LMS/
+VUE_APP_BASE_Roster_URL=https://bxapicmsqa.azurewebsites.net/api/v1/Roster/

@@ -1,0 +1,53 @@
+.current-weather-conditions{
+    margin: 10px 70px;
+    .uk-card-body{
+        background: white;
+        color: #666;
+        font-family: monospace;
+        box-shadow: 1px 1px 1px 0px lightgrey;
+        -webkit-animation-name: fadeIn;
+        animation-name: fadeIn;
+        -webkit-animation-duration: 10s;
+        animation-duration: 3s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+    }
+    .view-more{
+        color: #666;
+        font-family: monospace;
+        .uk-button-default{
+            background: white;
+            margin: 10px 0px;
+        }
+        .uk-button-default:hover{
+            background: lightgray;
+        }
+    }
+    @-webkit-keyframes fadeIn {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+     }
+     
+     @keyframes fadeIn {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+     }
+     .detailed-desc{
+        -webkit-animation-name: fadeIn;
+        animation-name: fadeIn;
+        -webkit-animation-duration: 10s;
+        animation-duration: 3s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+     }
+    .uk-card-body .title{
+        color: black;
+        font-size: 14px;
+        font-weight: 700;
+    }
+    .uk-card-body .value{
+        color: blue;
+        font-size: 12px;
+        font-weight: 700;
+    }
+}
