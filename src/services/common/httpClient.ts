@@ -18,11 +18,9 @@ const authInterceptor = (config: any) => {
 httpClient().interceptors.request.use(authInterceptor);
 httpClient().interceptors.response.use(
   response => {
-    /** TODO: Add any response interceptors */
     return response;
   },
   error => {
-    /** TODO: Do something with response error */
     return Promise.reject(error.response);
   }
 );
